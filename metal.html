@@ -1,127 +1,76 @@
 <!DOCTYPE html>
-<html>
-    <head>
-            <meta charset="utf-8">
-            <meta name="scrobbler" content="music,rap music,pop music,sufi music,country music,instrumental music,rock music" >
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-            <link href="css/bootstrap.min.css" rel="stylesheet" >
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <script src="js/bootstrap.min.js" ></script>
-            <script src="https://code.jquery.com/jquery.js" ></script>
-            <title>Metal Music Scrobbler</title>
-            <style>
-                .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 80px;
-  text-align: center;
-  margin: 5px 5px;
-}
+<html lan="en">
 
-.fa:hover {
-    opacity: 0.5;
-}
+<head>
+    <meta charset="utf-8">
+    <title>Scrobbler music streamer</title>
+    <meta name="scrobbler" content="music,rap music,pop music,sufi music,country music,instrumental music,rock music">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
+<body style="background-image:url('images/back.jpg')">
+    <div class="container-fluid">
+        <div class="page-header bgimage" style="background-image: url('images/wonderful-colorful-music-notes.jpg');">
+            <a href="index.html" targer="blank" title="Scrobbler home page"><img src="images/Scrobbler logo.png"
+                    height="90" width="260" class="img-responsive" /></a>
+            <h2 class="moto">LOVE MUSIC!LISTEN SCROBBLER</h2>
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #ce0f0f;
-  color: white;
-}
-            .bgimage{
-            background-position:10%;
-            padding:8px;
-            text-align: center;
-        }
-        .button{
-            background-color: rgba(166, 183, 240, 0.863);
-            border-radius: 13%;
-        }
-        .sidebarleft{
-            background-color:rgba(136, 21, 56, 1);
-            float:left;
-            padding:0px;
-            margin-left:15px;
-            color:white;
-            max-width:201px;
-            min-height: 1743px;
-        }
-        .footer1{
-            color:white;
-            font-family: 'Courier New';
-            font-weight: bold;
-        }
-        </style>
-    </head>
-    <body style="background-image:url('images/back.jpg')">
-        <div class="container-fluid">
-                <div class="page-header bgimage" style="background-image: url('images/wonderful-colorful-music-notes.jpg');">
-                    <a href="new_home_page.html" targer="blank"><abbr title="Scrobbler home page"><img src="images/Scrobbler logo.png" height="90" width="260" /></abbr> </a>
-                    <h2 style="color:white;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">LOVE MUSIC!LISTEN SCROBBLER</h2>
-                    <div class="wrap">
-                        <div class="search">
-                            <div>
-                                <form action="http://www.youtube.com/results" method="get" target="_blank">
-                                    <input class="searchTerm" name="search_query" type="text" maxlength="128" />
-                                    <select name="search_type">
-                                        <option value="">Videos</option>
-                                        <option value="search_users">Channels</option>
-                                    </select>
-                                    <input class="searchButton" type="submit" value="search" />
-                                </form>
-                            </div>
-                        </div>
+            <div class="wrap">
+                <div class="search">
+                    <div>
+                        <form action="http://www.youtube.com/results" method="get" target="_blank">
+                            <input class="searchTerm" name="search_query" type="text" maxlength="128" />
+                            <select name="search_type">
+                                <option value="">Videos</option>
+                                <option value="search_users">Channels</option>
+                            </select>
+                            <input class="searchButton" type="submit" value="search" />
+                        </form>
                     </div>
                 </div>
-               <hr color="white" />
+            </div>
+
         </div>
-        <div class="btn-group-justified"><center>
-            <a href="rock.html" class="btn btn-primary button" target="_self">Rock</a>
-            <a href="pop.html" class="btn btn-primary button" target="_self">Pop</a>
-            <a href="country.html" class="btn btn-primary button" target="_self">Country</a>
-            <a href="instrumental.html" class="btn btn-primary button" target="_self">Instrumental</a>
-            <a href="jazz.html" class="btn btn-primary button"  target="_self">Jazz</a>
-            <a href="metal.html" class="btn btn-primary button" target="_self">Metal</a>
-            <a href="romantic.html" class="btn btn-primary button" target="_self">Romantic</a>
-            <a href="rap.html" class="btn btn-primary button" target="_self">Rap</a>
-            <a href="sufi.html" class="btn btn-primary button" target="_self">Sufi</a>
-            <a href="classic.html" class="btn btn-primary button" target="_self">Classic</a>
-            <a href="artist.html" class="btn btn-primary button" target="_self">Artist</a>
-            <a href="album.html" class="btn btn-primary button" target="_self">Album</a>
+        <hr />
+        <div class="btn-group-justified">
+            <center>
+                <a href="rock.html" class="btn btn-primary button" target="_self">Rock</a>
+                <a href="pop.html" class="btn btn-primary button" target="_self">Pop</a>
+                <a href="country.html" class="btn btn-primary button" target="_self">Country</a>
+                <a href="instrumental.html" class="btn btn-primary button" target="_self">Instrumental</a>
+                <a href="jazz.html" class="btn btn-primary button" target="_self">Jazz</a>
+                <a href="metal.html" class="btn btn-primary button" target="_self">Metal</a>
+                <a href="romantic.html" class="btn btn-primary button" target="_self">Romantic</a>
+                <a href="rap.html" class="btn btn-primary button" target="_self">Rap</a>
+                <a href="sufi.html" class="btn btn-primary button" target="_self">Sufi</a>
+                <a href="classic.html" class="btn btn-primary button" target="_self">Classic</a>
+                <a href="artist.html" class="btn btn-primary button" target="_self">Artist</a>
+                <a href="album.html" class="btn btn-primary button" target="_self">Album</a>
             </center>
         </div>
-        <hr>
-        <div class="sidebarleft">
-            <marquee direction="up" scrollamount="3" style="background-color:rgba(136, 21, 56, 0.863)">
-                All web pages of this website are in a sense under construction. Static, non-changing content is a thing of the past.
-                Everything is tentative and stands to
-                 be changed at any point of the developmental 
-                 period at the discretion of the owners if they find better alternatives.
-                 soon every updates will be uploaded.
-                 Stay tuned.Bookmark our website and share.
-                 <h4><center><i>THANK YOU!</i></center></h4>
-                 <h5>Team members:</h5><br>
-                 Aakash kr. Singh<br>Lakshaya<br>Satish Chandra Gupta
-            </marquee>
-        </div>
+    </div>
+    <hr />
+    <div class="sidebarleft">
+        <marquee direction="up" scrollamount="3" style="background-color:rgba(136, 21, 56, 0.863)">
+            All web pages of this website are in a sense under construction. Static, non-changing content is a thing of
+            the past.
+            Everything is tentative and stands to
+            be changed at any point of the developmental
+            period at the discretion of the owners if they find better alternatives.
+            soon every updates will be uploaded.
+            Stay tuned.Bookmark our website and share.
+            <h4>
+                <center><i>THANK YOU!</i></center>
+            </h4>
+            Satish Chandra Gupta
+        </marquee>
+    </div>
         <div class="container-fluid">
                 <iframe width="552" height="414" src="https://www.youtube.com/embed/C_ijc7A5oAc?list=RDQMmr4nm036f18&amp;ecver=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe width="552" height="414" src="https://www.youtube.com/embed/RvWbcK3YQ_o?list=RDQMmr4nm036f18&amp;ecver=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
